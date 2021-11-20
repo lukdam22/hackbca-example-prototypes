@@ -1,29 +1,3 @@
-<!-- 
-    STOP! You should understand how index.html AND events.html are built first. 
-
-    This page is a prototype of an event page, showing details about a specific event.
-
-    An unregistered user will not see any buttons.
-    A registered user (attendee) will see the "star" buttons
-    An admin user will see the edit, delete, and create buttons
-
-    This page has the same nav header and footer as index; the main section is what contains different things.
-
-    Many things of note are shared with events.html: 
-        Tables, which materialize has nice options for: https://materializecss.com/table.html
-        Icons, which are : https://materializecss.com/icons.html
-        Materialize "buttons": https://materializecss.com/buttons.html
-        Some custom CSS for formatting tables:         <link rel="stylesheet" href="/styles/tables.css">
-        Some custom JS for interactive buttons:     <script src="/js/event_utils.js"></script>
-        Some onclick attributes on certain clickable HTML elements, which trigger a snippet of JS
-
-    Some things of note SPECIFIC TO THIS PAGE:
-        Most of the page is a Materialize Card:    https://materializecss.com/cards.html 
-        Some custom CSS:         <link rel="stylesheet" href="/styles/event.css">
-
-
-    After this page, check out eventform.html (a sample add/modify event page)
- -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -116,7 +90,7 @@
                 <td nowrap>
 
                   <!-- Alternatively to going to a new page, trigger a modal ??-->
-                  <a class="btn-floating waves-effect waves-light green lighten-1" href="/eventform.html"><i
+                  <a class="btn-floating waves-effect waves-light green lighten-1" href="../eventform.html"><i
                       class="material-icons">edit</i></a>
                   <a class="btn-floating waves-effect waves-light red"
                     onclick='confirmDelete("Opening Ceremony","{{ event_id}}", "/events.html")'><i
